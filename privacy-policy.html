@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Football Legend</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+            background: #0D1117; color: #C9D1D9; line-height: 1.7;
+            padding: 24px; max-width: 800px; margin: 0 auto;
+        }
+        h1 { color: #58A6FF; font-size: 28px; margin-bottom: 8px; }
+        h2 { color: #58A6FF; font-size: 20px; margin: 32px 0 12px; border-bottom: 1px solid #30363D; padding-bottom: 6px; }
+        h3 { color: #E6EDF3; font-size: 16px; margin: 20px 0 8px; }
+        p, li { font-size: 15px; margin-bottom: 10px; }
+        ul { padding-left: 24px; }
+        a { color: #58A6FF; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .effective { color: #8B949E; font-size: 14px; margin-bottom: 32px; }
+        table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+        th, td { border: 1px solid #30363D; padding: 8px 12px; text-align: left; font-size: 14px; }
+        th { background: #161B22; color: #E6EDF3; }
+    </style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="effective">Effective Date: April 6, 2026 &nbsp;|&nbsp; Last Updated: April 6, 2026</p>
+
+<p><strong>Football Legend</strong> ("the App") is published by <strong>Stefanica Stefan Gheorghe PFA</strong> ("we", "us", "our"). This Privacy Policy explains what data we collect, why, and how we protect it.</p>
+
+<p>By using Football Legend you agree to this policy. If you do not agree, please uninstall the App.</p>
+
+<h2>1. Data We Collect</h2>
+
+<h3>1.1 Account Data (optional)</h3>
+<p>If you create an account to enable cloud saves, we collect:</p>
+<ul>
+    <li>Email address and password (managed by Firebase Authentication)</li>
+    <li>Display name (if provided)</li>
+    <li>Firebase User ID (UID)</li>
+</ul>
+<p>You may use the App without an account. Guest users' data is stored only on their device.</p>
+
+<h3>1.2 Game Data</h3>
+<p>Your game progress (club, players, season, finances, trophies, settings) is stored locally on your device using AsyncStorage. If you opt into cloud sync, a copy is also stored in Google Firebase Firestore under your account.</p>
+
+<h3>1.3 Analytics Data</h3>
+<p>We use <strong>Firebase Analytics</strong> to understand how the App is used. This includes:</p>
+<ul>
+    <li>Anonymous usage events (e.g., match played, season completed, shop opened)</li>
+    <li>Screen views</li>
+    <li>User properties (current season, country, difficulty level)</li>
+    <li>Device type, OS version, app version</li>
+</ul>
+<p>You can disable analytics in the App's Settings screen.</p>
+
+<h3>1.4 Session Analytics (Microsoft Clarity)</h3>
+<p>We use <strong>Microsoft Clarity</strong> for session analytics such as heatmaps and interaction patterns. Clarity does not collect personal information. For details see <a href="https://clarity.microsoft.com/terms" target="_blank">Microsoft Clarity Terms</a>.</p>
+
+<h3>1.5 Crash Reports</h3>
+<p>We use <strong>Sentry</strong> to collect crash reports in production builds. This includes:</p>
+<ul>
+    <li>Stack traces and error messages</li>
+    <li>Device model, OS version, app version</li>
+    <li>User ID (if logged in) for debugging purposes</li>
+    <li>Screenshots at the moment of crash (UI state only, no personal content)</li>
+</ul>
+
+<h3>1.6 Advertising Data</h3>
+<p>The App displays <strong>Google AdMob</strong> rewarded ads. AdMob may collect:</p>
+<ul>
+    <li>Device advertising identifier (IDFA on iOS, GAID on Android)</li>
+    <li>IP address (for approximate location / ad relevance)</li>
+    <li>Ad interaction data</li>
+</ul>
+<p>On iOS 14.5+, we request your permission via the App Tracking Transparency (ATT) prompt before accessing the advertising identifier. You may decline without affecting core gameplay.</p>
+<p>EU/EEA users are shown a GDPR consent form on first launch. You can change your ad preferences at any time via the "Privacy Settings" option in the App's Settings screen.</p>
+
+<h3>1.7 In-App Purchase Data</h3>
+<p>Purchases are processed by <strong>Apple App Store</strong> or <strong>Google Play Store</strong>. We do not collect or store your payment information. We receive only a transaction identifier and product ID to credit your account.</p>
+
+<h2>2. How We Use Your Data</h2>
+<table>
+    <tr><th>Purpose</th><th>Data Used</th><th>Legal Basis (GDPR)</th></tr>
+    <tr><td>Provide core gameplay</td><td>Game data (local)</td><td>Contract performance</td></tr>
+    <tr><td>Cloud save &amp; sync</td><td>Account data, game data</td><td>Consent (opt-in)</td></tr>
+    <tr><td>Improve the App</td><td>Analytics events</td><td>Legitimate interest</td></tr>
+    <tr><td>Fix crashes</td><td>Crash reports</td><td>Legitimate interest</td></tr>
+    <tr><td>Show ads</td><td>Advertising ID, IP</td><td>Consent (ATT / GDPR)</td></tr>
+    <tr><td>Process purchases</td><td>Transaction ID</td><td>Contract performance</td></tr>
+</table>
+
+<h2>3. Third-Party Services</h2>
+<p>We share data with the following services, each governed by their own privacy policies:</p>
+<table>
+    <tr><th>Service</th><th>Provider</th><th>Purpose</th><th>Privacy Policy</th></tr>
+    <tr><td>Firebase (Auth, Firestore, Analytics)</td><td>Google LLC</td><td>Authentication, cloud storage, analytics</td><td><a href="https://firebase.google.com/support/privacy" target="_blank">Link</a></td></tr>
+    <tr><td>Google AdMob</td><td>Google LLC</td><td>Rewarded advertisements</td><td><a href="https://policies.google.com/privacy" target="_blank">Link</a></td></tr>
+    <tr><td>Sentry</td><td>Functional Software Inc.</td><td>Crash reporting</td><td><a href="https://sentry.io/privacy/" target="_blank">Link</a></td></tr>
+    <tr><td>Microsoft Clarity</td><td>Microsoft Corporation</td><td>Session analytics</td><td><a href="https://privacy.microsoft.com/privacystatement" target="_blank">Link</a></td></tr>
+    <tr><td>Expo (EAS Updates)</td><td>Expo, Inc.</td><td>Over-the-air updates</td><td><a href="https://expo.dev/privacy" target="_blank">Link</a></td></tr>
+</table>
+
+<h2>4. Data Retention</h2>
+<ul>
+    <li><strong>Local data:</strong> Stored until you uninstall the App or clear app data.</li>
+    <li><strong>Cloud saves:</strong> Stored in Firestore until you delete your account.</li>
+    <li><strong>Analytics:</strong> Retained by Firebase for up to 14 months, then aggregated.</li>
+    <li><strong>Crash reports:</strong> Retained by Sentry for 90 days.</li>
+    <li><strong>Ad data:</strong> Governed by Google's retention policies.</li>
+</ul>
+
+<h2>5. Your Rights</h2>
+<p>Under GDPR and applicable laws you may:</p>
+<ul>
+    <li><strong>Access</strong> your data — contact us and we will provide a copy.</li>
+    <li><strong>Delete</strong> your account and all associated cloud data via <em>Settings → Danger Zone → Delete Account</em> in the App.</li>
+    <li><strong>Withdraw consent</strong> for analytics (Settings → disable analytics) or ads (Settings → Privacy Settings).</li>
+    <li><strong>Opt out of tracking</strong> on iOS via ATT prompt or device Settings → Privacy → Tracking.</li>
+    <li><strong>Data portability</strong> — contact us for an export of your Firestore data.</li>
+    <li><strong>Lodge a complaint</strong> with your local data protection authority.</li>
+</ul>
+
+<h2>6. Children's Privacy</h2>
+<p>Football Legend is not directed at children under 13. We do not knowingly collect personal data from children under 13. If you believe a child under 13 has provided us data, contact us and we will delete it promptly.</p>
+
+<h2>7. Data Security</h2>
+<p>We use industry-standard measures to protect your data, including:</p>
+<ul>
+    <li>Firebase Authentication with encrypted credentials</li>
+    <li>Firestore security rules restricting access to authenticated users' own data</li>
+    <li>HTTPS for all network communications</li>
+</ul>
+<p>No system is 100% secure. We cannot guarantee absolute security but we take reasonable precautions.</p>
+
+<h2>8. International Transfers</h2>
+<p>Your data may be processed in the United States and other countries where our service providers operate. These transfers are governed by Standard Contractual Clauses or equivalent safeguards.</p>
+
+<h2>9. Changes to This Policy</h2>
+<p>We may update this policy from time to time. The "Last Updated" date at the top will change. Continued use of the App after changes constitutes acceptance.</p>
+
+<h2>10. Contact Us</h2>
+<p>If you have questions or wish to exercise your rights, contact us at:</p>
+<p>
+    <strong>Stefanica Stefan Gheorghe PFA</strong><br>
+    Email: <a href="mailto:stefan.stefanica@ymail.com">stefan.stefanica@ymail.com</a>
+</p>
+
+</body>
+</html>
